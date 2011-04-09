@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+#
+# Copyright 2011 Markus Pielmeier
+#
+# This file is part of minecraft-world-io.
+#
+# minecraft-world-io is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# minecraft-world-io is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with minecraft-world-io.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+from marook.minecraft.world import World
+from marook.minecraft.povray import render
+import re
+
+def parsePos(s):
+    p = re.compile('([-\\d]+),([-\\d]+),([-\\d]+)')
+    m = p.match(s)
+
+    if not m:
+        return None
+
+    return (int(m.group(1)), int(m.group(2)), int(m.group(3)))
+
+def main(argv):
+    app, worldPath, minPosArg, maxPosArg = argv
+
+    minPos = parsePos(minPosArg)
+    maxPos = parsePos(maxPosArg)
+
+    world = World(worldPath)
+
+    with open(worldPath + '.pov', 'w') as f:
+        render(f, world, extents = (minPos, maxPos))
+
+if __name__ == '__main__':
+    import logging
+    from marook.minecraft.debug import isDebugMode
+
+    if isDebugMode():
+        logging.basicConfig(level = logging.DEBUG)
+    else:
+        logging.basicConfig(level = logging.WARNING)
+
+    import sys
+    main(sys.argv)

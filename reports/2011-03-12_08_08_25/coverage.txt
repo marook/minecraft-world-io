@@ -1,0 +1,29 @@
+Name                                                 Stmts   Exec  Cover   Missing
+----------------------------------------------------------------------------------
+src/bin/mc_world_to_pov                                 19      0     0%   21-48
+src/modules/__init__                                     1      0     0%   1
+src/modules/marook/__init__                              1      0     0%   1
+src/modules/marook/minecraft/__init__                    1      0     0%   1
+src/modules/marook/minecraft/block                      19      3    15%   21-57, 64
+src/modules/marook/minecraft/cache                      11      6    54%   21-32, 45-47
+src/modules/marook/minecraft/chunk                      68     55    80%   21-23, 31-33, 37, 41, 44, 64-66, 71, 78, 93, 111
+src/modules/marook/minecraft/povray                    105      0     0%   21-177
+src/modules/marook/minecraft/tag/__init__                1      0     0%   1
+src/modules/marook/minecraft/tag/block_light             6      6   100%   
+src/modules/marook/minecraft/tag/blocks                 20     11    55%   21-29, 40-42, 45
+src/modules/marook/minecraft/tag/data                    6      6   100%   
+src/modules/marook/minecraft/tag/entities                9      9   100%   
+src/modules/marook/minecraft/tag/generic_parser         21     11    52%   21-23, 31, 37, 43-45, 53-55, 61-63
+src/modules/marook/minecraft/tag/generic_tags            9      5    55%   21, 23, 27-29
+src/modules/marook/minecraft/tag/height_map              6      6   100%   
+src/modules/marook/minecraft/tag/last_update             7      7   100%   
+src/modules/marook/minecraft/tag/level                  13     13   100%   
+src/modules/marook/minecraft/tag/parser                 38     32    84%   21-24, 58-60, 63
+src/modules/marook/minecraft/tag/sky_light               6      6   100%   
+src/modules/marook/minecraft/tag/terrain_populated       8      8   100%   
+src/modules/marook/minecraft/tag/tile_entities          53     36    67%   21-26, 69-71, 77-79, 84, 96-104, 108-110
+src/modules/marook/minecraft/tag/x_pos                   7      7   100%   
+src/modules/marook/minecraft/tag/z_pos                   7      7   100%   
+src/modules/marook/minecraft/world                     121     78    64%   21-37, 40, 43, 48, 53, 58-60, 66, 68, 81, 101-105, 107, 113-114, 128, 135, 143-147, 154-156, 160, 162, 167, 172, 183, 187, 206, 216
+----------------------------------------------------------------------------------
+TOTAL                                                  563    312    55%   

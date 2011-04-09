@@ -1,0 +1,26 @@
+Name                                                 Stmts   Exec  Cover   Missing
+----------------------------------------------------------------------------------
+src/modules/__init__                                     1      0     0%   1
+src/modules/marook/__init__                              1      0     0%   1
+src/modules/marook/minecraft/__init__                    1      0     0%   1
+src/modules/marook/minecraft/cache                      11      7    63%   21-32, 47
+src/modules/marook/minecraft/povray                     41     35    85%   21-25, 29, 38, 43
+src/modules/marook/minecraft/tag/__init__                1      0     0%   1
+src/modules/marook/minecraft/tag/block_light             6      6   100%   
+src/modules/marook/minecraft/tag/blocks                 20     11    55%   21-29, 40-42, 45
+src/modules/marook/minecraft/tag/data                    6      6   100%   
+src/modules/marook/minecraft/tag/entities                9      9   100%   
+src/modules/marook/minecraft/tag/generic_parser         21     11    52%   21-23, 31, 37, 43-45, 53-55, 61-63
+src/modules/marook/minecraft/tag/generic_tags            9      5    55%   21, 23, 27-29
+src/modules/marook/minecraft/tag/height_map              6      6   100%   
+src/modules/marook/minecraft/tag/last_update             7      7   100%   
+src/modules/marook/minecraft/tag/level                  13     13   100%   
+src/modules/marook/minecraft/tag/parser                 38     32    84%   21-24, 58-60, 63
+src/modules/marook/minecraft/tag/sky_light               6      6   100%   
+src/modules/marook/minecraft/tag/terrain_populated       8      8   100%   
+src/modules/marook/minecraft/tag/tile_entities          53     42    79%   21-26, 69-71, 77-79, 84, 108-110
+src/modules/marook/minecraft/tag/x_pos                   7      7   100%   
+src/modules/marook/minecraft/tag/z_pos                   7      7   100%   
+src/modules/marook/minecraft/world                      89     57    64%   21-36, 39, 42, 47, 52, 57-59, 65, 80, 100-104, 106, 112-113, 127, 142-144, 146, 151, 156
+----------------------------------------------------------------------------------
+TOTAL                                                  361    275    76%   

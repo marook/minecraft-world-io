@@ -1,0 +1,67 @@
+testNoWorldDirectoryExistsFail (marook_test.minecraft_test.testWorldAccess.TestWorldLoadFails) ... ok
+testExtents (marook_test.minecraft_test.testWorldAccess.TestWorldWithSuccessfullyLoadedWorld) ... ok
+testGetExistingBlock (marook_test.minecraft_test.testWorldAccess.TestWorldWithSuccessfullyLoadedWorld) ... ok
+testGetNumberOfSectors (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testGetSectorFilePosition (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testGetSectorNumber (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testOffsets (marook_test.minecraft_test.testRegion.TestRegionOffsets) ... ok
+testWithMatchingFileNames (marook_test.minecraft_test.testWorldRegionFileMatcher.RegionFileNameMatcherTest) ... ok
+testWithoutMatchingFileName (marook_test.minecraft_test.testWorldRegionFileMatcher.RegionFileNameMatcherTest) ... ok
+test (marook_test.minecraft_test.testPovray.TestPovRay) ... ok
+testConstructor (marook_test.minecraft_test.testChunkChunkGenerator.ChunkGeneratorConstructorTest) ... ok
+testCubicChunkDistribution (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest) ... ERROR
+testNonCubicChunkDistribution (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest) ... ERROR
+testMultipleBlockTypesChunksForSmallWorld (marook_test.minecraft_test.testChunkChunkGenerator.OneChunkWorldChunkGeneratorTest) ... ok
+testOneChunkForSmallWorld (marook_test.minecraft_test.testChunkChunkGenerator.OneChunkWorldChunkGeneratorTest) ... ok
+testLastRegionIsShrinkedWhenNecessary (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testMaxRegionCount (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testOptimalRegionLength (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testDictArgsConstructor (marook_test.minecraft_test.tag_test.test_generic_tags.CompositeTagTest) ... ok
+testKWArgsConstructor (marook_test.minecraft_test.tag_test.test_generic_tags.CompositeTagTest) ... ok
+testParse (marook_test.minecraft_test.tag_test.test_blocks.BlocksParserTest) ... ok
+testParseSign (marook_test.minecraft_test.tag_test.test_tile_entities.SignParserTest) ... ok
+
+======================================================================
+ERROR: testCubicChunkDistribution (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 171, in testCubicChunkDistribution
+    chunk = self._createChunk(blockId, blockPos)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 146, in _createChunk
+    chunks = self._generateChunks(world)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 136, in _generateChunks
+    return self._mapChunksToBlockIds(chunks)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 46, in _mapChunksToBlockIds
+    for blockId, chunk in chunkIterator:
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/modules/marook/minecraft/chunk.py", line 111, in generateChunks
+    c = self._createChunk(blockId, world, extent)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/modules/marook/minecraft/chunk.py", line 95, in _createChunk
+    c.chunks = self._createSubChunks(blockId, world, extent)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/modules/marook/minecraft/chunk.py", line 79, in _createSubChunks
+    for xC in subChunksCount[0]:
+TypeError: 'int' object is not iterable
+
+======================================================================
+ERROR: testNonCubicChunkDistribution (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 183, in testNonCubicChunkDistribution
+    chunk = self._createChunk(blockId, blockPos)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 146, in _createChunk
+    chunks = self._generateChunks(world)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 136, in _generateChunks
+    return self._mapChunksToBlockIds(chunks)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/test/marook_test/minecraft_test/testChunkChunkGenerator.py", line 46, in _mapChunksToBlockIds
+    for blockId, chunk in chunkIterator:
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/modules/marook/minecraft/chunk.py", line 111, in generateChunks
+    c = self._createChunk(blockId, world, extent)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/modules/marook/minecraft/chunk.py", line 95, in _createChunk
+    c.chunks = self._createSubChunks(blockId, world, extent)
+  File "/home/marook/work/devel/minecraft/minecraft-world-io/src/modules/marook/minecraft/chunk.py", line 79, in _createSubChunks
+    for xC in subChunksCount[0]:
+TypeError: 'int' object is not iterable
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.558s
+
+FAILED (errors=2)

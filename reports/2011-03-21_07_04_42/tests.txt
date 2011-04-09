@@ -1,0 +1,40 @@
+testNoWorldDirectoryExistsFail (marook_test.minecraft_test.testWorldAccess.TestWorldLoadFails) ... ok
+testExtents (marook_test.minecraft_test.testWorldAccess.TestWorldWithSuccessfullyLoadedWorld) ... ok
+testGetExistingBlock (marook_test.minecraft_test.testWorldAccess.TestWorldWithSuccessfullyLoadedWorld) ... ok
+testGetNumberOfSectors (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testGetSectorFilePosition (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testGetSectorNumber (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testOffsets (marook_test.minecraft_test.testRegion.TestRegionOffsets) ... ok
+testWithMatchingFileNames (marook_test.minecraft_test.testWorldRegionFileMatcher.RegionFileNameMatcherTest) ... ok
+testWithoutMatchingFileName (marook_test.minecraft_test.testWorldRegionFileMatcher.RegionFileNameMatcherTest) ... ok
+test (marook_test.minecraft_test.testPovray.TestPovRay) ... ok
+testConstructor (marook_test.minecraft_test.testChunkChunkGenerator.ChunkGeneratorConstructorTest) ... ok
+testCubicChunkDistribution (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest) ... ok
+testDropBlocksWhichAreSurroundedBySolidBlocks (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest) ... ok
+testNonCubicChunkDistribution (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest) ... ok
+testRemainBlocksWhichAreSurroundedByTransparentBlocks (marook_test.minecraft_test.testChunkChunkGenerator.MultipleChunksWorldChunkGeneratorTest) ... ok
+testMultipleBlockTypesChunksForSmallWorld (marook_test.minecraft_test.testChunkChunkGenerator.OneChunkWorldChunkGeneratorTest) ... ok
+testOneChunkForSmallWorld (marook_test.minecraft_test.testChunkChunkGenerator.OneChunkWorldChunkGeneratorTest) ... ok
+testLastRegionIsShrinkedWhenNecessary (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testMaxRegionCount (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testNegativeRangeRegions (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testOptimalRegionLength (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testRegionMinIndexIsNotZeroBug (marook_test.minecraft_test.testChunkRegions.RegionsTest) ... ok
+testExtentsChunkWithoutExtents (marook_test.minecraft_test.testChunkChunk.ChunkTest) ... ok
+testExtentsFromChildBlocks (marook_test.minecraft_test.testChunkChunk.ChunkTest) ... ok
+testExtentsFromChildCunks (marook_test.minecraft_test.testChunkChunk.ChunkTest) ... ok
+testCacheHit (marook_test.minecraft_test.testCache.TransientCacheTest) ... ok
+testCacheMissBecauseItemNotInCache (marook_test.minecraft_test.testCache.TransientCacheTest) ... ok
+testCacheMissBecauseOfCacheCleanup (marook_test.minecraft_test.testCache.TransientCacheTest) ... ok
+testExceptionOnSettingEntryAfterCleanup (marook_test.minecraft_test.testCache.TransientCacheTest) ... ok
+testGetItemKeepsItemLongerInCache (marook_test.minecraft_test.testCache.TransientCacheTest) ... ok
+testDictArgsConstructor (marook_test.minecraft_test.tag_test.test_generic_tags.CompositeTagTest) ... ok
+testKWArgsConstructor (marook_test.minecraft_test.tag_test.test_generic_tags.CompositeTagTest) ... ok
+testParse (marook_test.minecraft_test.tag_test.test_blocks.BlocksParserTest) ... ok
+testParseChest (marook_test.minecraft_test.tag_test.test_tile_entities.ChestParserTest) ... ok
+testParseSign (marook_test.minecraft_test.tag_test.test_tile_entities.SignParserTest) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.522s
+
+OK

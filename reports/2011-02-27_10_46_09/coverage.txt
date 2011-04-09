@@ -1,0 +1,25 @@
+Name                                                 Stmts   Exec  Cover   Missing
+----------------------------------------------------------------------------------
+src/modules/__init__                                     1      0     0%   1
+src/modules/marook/__init__                              1      0     0%   1
+src/modules/marook/minecraft/__init__                    1      0     0%   1
+src/modules/marook/minecraft/cache                      11      6    54%   21-32, 45-47
+src/modules/marook/minecraft/tag/__init__                1      0     0%   1
+src/modules/marook/minecraft/tag/block_light             6      6   100%   
+src/modules/marook/minecraft/tag/blocks                 16     16   100%   
+src/modules/marook/minecraft/tag/data                    6      6   100%   
+src/modules/marook/minecraft/tag/entities                7      7   100%   
+src/modules/marook/minecraft/tag/generic_parser         14     14   100%   
+src/modules/marook/minecraft/tag/generic_tags            9      5    55%   21, 23, 27-29
+src/modules/marook/minecraft/tag/height_map              6      6   100%   
+src/modules/marook/minecraft/tag/last_update             7      7   100%   
+src/modules/marook/minecraft/tag/level                  13     13   100%   
+src/modules/marook/minecraft/tag/parser                 40     34    85%   21-23, 28, 62-64, 67
+src/modules/marook/minecraft/tag/sky_light               6      6   100%   
+src/modules/marook/minecraft/tag/terrain_populated       8      8   100%   
+src/modules/marook/minecraft/tag/tile_entities           7      7   100%   
+src/modules/marook/minecraft/tag/x_pos                   7      7   100%   
+src/modules/marook/minecraft/tag/z_pos                   7      7   100%   
+src/modules/marook/minecraft/world                      74     44    59%   21-32, 35, 40, 45, 50, 55-57, 63, 75, 95-101, 103, 107-108, 120, 125-127, 129, 133, 138
+----------------------------------------------------------------------------------
+TOTAL                                                  248    199    80%   

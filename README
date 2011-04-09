@@ -1,0 +1,21 @@
+minecraft-world-io
+
+1) Installation
+2) Contact
+
+---------------------------------------------------------------------
+Installation
+
+To install minecraft-world-io into your home directory type the following:
+
+$ python setup.py install --home ~/.local
+
+If you haven't already extended your local python path then add the following
+to your environment configuration script. For example to your .bashrc:
+
+export PYTHONPATH=~/.local/lib/python:$PYTHONPATH
+
+---------------------------------------------------------------------
+Contact
+
+* author: Markus Pielmeier <markus.pielmeier@googlemail.com>

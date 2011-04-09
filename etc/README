@@ -1,0 +1,8 @@
+The etc directory contains supplementary files:
+
+----------------------------------------------------------------------
+chunk_dump
+
+This is an uncompressed dump of a minecraft region chunk. There's some
+documentation about the chunk format here:
+http://www.minecraftwiki.net/wiki/Alpha_Level_Format/Chunk_File_Format

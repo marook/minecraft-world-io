@@ -1,0 +1,12 @@
+testNoWorldDirectoryExistsFail (marook_test.minecraft_test.testWorldAccess.TestWorldLoadFails) ... ok
+testGetBlock (marook_test.minecraft_test.testWorldAccess.TestWorldWithSuccessfullyLoadedWorld) ... ok
+testGetNumberOfSectors (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testGetSectorFilePosition (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testGetSectorNumber (marook_test.minecraft_test.testOffset.TestOffsetsOperations) ... ok
+testDictArgsConstructor (marook_test.minecraft_test.tag_test.test_generic_tags.CompositeTagTest) ... ok
+testKWArgsConstructor (marook_test.minecraft_test.tag_test.test_generic_tags.CompositeTagTest) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.196s
+
+OK
