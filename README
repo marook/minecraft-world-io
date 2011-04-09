@@ -1,7 +1,18 @@
 minecraft-world-io
 
-1) Installation
-2) Contact
+1) Current Status
+2) Installation
+3) Usage
+4) World Renditions Gallery
+5) Contact
+
+---------------------------------------------------------------------
+Current Status
+
+Right now minecraft-world-io is partly broken. At least these things won't
+work right now:
+* the test cases
+* reading chunks with some specific stuff in it :-)
 
 ---------------------------------------------------------------------
 Installation
@@ -14,6 +25,35 @@ If you haven't already extended your local python path then add the following
 to your environment configuration script. For example to your .bashrc:
 
 export PYTHONPATH=~/.local/lib/python:$PYTHONPATH
+
+---------------------------------------------------------------------
+Usage
+
+You can export minecraft blocks into povray format:
+
+$ mv_world_to_pov <path to world> <min coord> <max coord>
+
+The world will be written to <path to world>.pov
+
+Example:
+$ mc_world_to_pov .minecraft/saves/demo -50,0,-50 50,128,50
+
+Be warned: big dumps take a LOT of calculation time!
+
+Chunks which can't be parsed will not appear in the povray file. Also you will
+see some stacktraces in the console.
+
+Use the material definitions in the etc/textures directory to render an image
+using povray. Write me an email if you need further information. I'm waiting to
+hear from you.
+
+---------------------------------------------------------------------
+World Renditions Gallery
+
+The gallery is sorted by age. Send me your links so I can extend the gallery!
+
+* http://www.flickr.com/photos/59696509@N07/5546984743/sizes/l/in/photostream/
+* http://www.flickr.com/photos/59696509@N07/5575037936/sizes/l/in/photostream/
 
 ---------------------------------------------------------------------
 Contact
